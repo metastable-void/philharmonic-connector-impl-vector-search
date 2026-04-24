@@ -1,0 +1,7 @@
+[
+  {"id": "a", "vector": [1.0, 0.0, 0.0], "payload": {"text": "alpha"}},
+  {"id": "b", "vector": [0.8, 0.6, 0.0]},
+  {"id": "c", "vector": [0.0, 1.0, 0.0]},
+  {"id": "d", "vector": [-1.0, 0.0, 0.0], "payload": {"text": "delta"}},
+  {"id": "e", "vector": [0.6, 0.8, 0.0], "payload": {"text": "echo", "source": "fixture"}}
+]

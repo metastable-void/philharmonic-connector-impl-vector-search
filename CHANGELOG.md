@@ -9,10 +9,15 @@ this crate adheres to
 
 ## [Unreleased]
 
-Implementation pending. See the
-[Philharmonic workspace ROADMAP](https://github.com/metastable-void/philharmonic-workspace/blob/main/ROADMAP.md)
-for the phase that populates this crate.
+## [0.1.0] - 2026-04-24
 
-## [0.0.0]
+### Added
 
-Name reservation on crates.io. No functional content yet.
+- Initial substantive `vector_search` implementation of the
+  `philharmonic-connector-impl-api` `Implementation` trait.
+- Stateless in-memory cosine kNN search over request-local corpora,
+  including bounded min-heap top-k selection and optional score-threshold filtering.
+- Strict request validation for corpus-size limits, `top_k`, threshold range,
+  vector-length mismatches (with corpus offset), and non-finite vector values.
+- Module-level unit tests plus deterministic fixture-based integration tests
+  covering happy path, error cases, threshold behavior, top-k behavior, and large-corpus ranking.
